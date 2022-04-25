@@ -24,13 +24,16 @@ let start = document.querySelector("#start");
 
 function inningChange() {
     inning += 1;
-    balls = maxballs;
     if (inning < 3) {
         start.innerHTML = "<h3>Match Ongoing. Inning " + inning + ".</h3>";
+        balls = maxballs;
         document.querySelector("#ballcount").style.visibility = "visible";
     }
     else
+    {
         start.innerHTML = "<h3>Match Over</h3>";
+        document.querySelector("#ballcount").style.visibility = "hidden";
+    }
     document.querySelector("#balls").innerText = balls;
     if (inning > 2) {
         let team1 = document.querySelectorAll('.teams')[0];
