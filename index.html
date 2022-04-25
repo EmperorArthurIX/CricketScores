@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Scores</title>
+    <link rel="stylesheet" href="cricket.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="teams">
+        <div>
+        <a target="_blank" href="https://www.mumbaiindians.com/"><img class="logo" src="./images/Mumbai_Indians_Logo.png" width=200></a>
+        </div>
+        <div>
+        <a target="_blank" href="https://twitter.com/ImRo45"><img class='cap' src="./images/mumcap.webp" height=200></a>
+        </div>
+    </div>
+    <div id="pitch">
+        <h1>Cricket Score</h1>
+        <div id="scorecard">
+            <h2 id="t1">Mumbai</h2>
+            <span id="s1">0</span>
+            |
+            <span id="w1">0</span>
+
+            <h2 id="t2">Kolkata</h2>
+            <span id="s2">0</span>
+            |
+            <span id="w2">0</span>
+        </div>
+        <div class="updates">
+            <button type="button" onclick="updateScore(this.id)" id="one">1</button>
+            <button type="button" onclick="updateScore(this.id)" id="two">2</button>
+            <button type="button" onclick="updateScore(this.id)" id="three">3</button>
+            <button type="button" onclick="updateScore(this.id)" id="four">4</button>
+            <button type="button" onclick="updateScore(this.id)" id="five">5</button>
+            <button type="button" onclick="updateScore(this.id)" id="six">6</button>
+            <button type="button" onclick="updateScore(this.id)" id="wic">W</button>
+            <button type="button" onclick="updateScore(this.id)" id="dot">0</button>
+        </div>
+        <div id="start">
+            <button type="button" onclick="inningChange()">Begin</button>
+        </div>
+        <div id="ballcount" style="visibility:hidden;">
+            Ball Count: <span id="balls">0</span>
+        </div>
+    </div>
+    <div class="teams">
+        <div>
+        <a target="_blank" href="https://www.kkr.in/"><img class="logo" src="./images/Kolkata_Knight_Riders_Logo.png" height=200></a>
+        </div>
+        <div>
+        <a href="https://twitter.com/shreyasiyer15" target="_blank"><img class='cap' src="./images/kkrcap.jpg" height=200></a>
+        </div>
+    </div>
+    <script src="cricket.js"></script>
+</body>
+
+</html>

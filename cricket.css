@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url("https://media.istockphoto.com/photos/light-green-defocused-blurred-motion-abstract-background-picture-id1138288758?k=20&m=1138288758&s=612x612&w=0&h=LMtberFagKLWqz4BdhZt4Ukh28m3TYJNZ-i5NegN1ro=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Comfortaa', cursive;
+}
+
+.teams * {
+    margin: auto auto;
+    padding: 10px;
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cap {
+    border-radius: 50%;
+    transition: box-shadow 500ms;
+}
+.cap:hover
+{
+    box-shadow: 0 0 16px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo
+{
+    transition: box-shadow 500ms;
+    border-radius: 16px;
+}
+.logo:hover
+{
+    box-shadow: 0 0 16px 10px rgba(0, 0, 0, 0.5);
+}
+
+#pitch {
+    margin: 20px 0;
+    width: min(200px, 50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(200, 100, 80, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgba(180, 90, 90, 0.45);
+    transition: box-shadow 500ms;
+}
+#pitch:hover
+{
+    box-shadow: 0 0 16px 10px rgba(180, 90, 90, 0.5);
+}
+
+.updates {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+}
+
+button {
+    background-image: linear-gradient(45deg, pink 0%, hotpink 51%, red 100%);
+    opacity: 0.75;
+    transition: 1s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    height: 24px;
+    width: min(40px, 1fr);
+    border: none;
+    border-radius: 30px;
+    margin: 1px;
+}
+button:hover {
+    background-position: right center;
+    color: #fff;
+    margin: 3px;
+}
+
+@media screen and (max-width: 426px) {
+    .updates {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+    body
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .teams {
+        display: none !important;
+    }
+    body
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    body
+    {
+        font-size: 14px;
+    }
+}
