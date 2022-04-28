@@ -26,7 +26,7 @@ function inningChange() {
     inning += 1;
     if (inning < 3) {
         start.innerHTML = "<h3>Match Ongoing. Inning " + inning + ".</h3>";
-        balls = maxballs;
+        balls = maxballs + 1;
         document.querySelector("#ballcount").style.visibility = "visible";
     }
     else
